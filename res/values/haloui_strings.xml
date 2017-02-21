@@ -26,4 +26,8 @@
     <string name="haloui_battery_type_title">Battery</string>
     <string name="haloui_battery_type_message">%1$d mAh</string>
     <string name="processor_prettyname" />
+
+    <!-- Pocket mode -->
+    <string name="proximity_wake_title">Prevent accidental wake-up</string>
+    <string name="proximity_wake_summary">Check the proximity sensor prior to waking up screen</string>
 </resources>
