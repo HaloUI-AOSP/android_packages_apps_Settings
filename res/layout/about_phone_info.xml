@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright 2026 haloUI
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/superior_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:background="@drawable/haloui_about_bg"
+    android:paddingTop="12dp"
+    android:paddingBottom="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="12dp">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="?android:attr/listDivider"/>
+        <ImageView
+            android:layout_width="62dp"
+            android:layout_height="11dp"
+            android:layout_marginEnd="12dp"
+            android:src="@drawable/aronasymbols"
+            android:tint="?android:attr/textColorSecondary"
+            android:importantForAccessibility="no"/>
+    </LinearLayout>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/materialColorSurfaceContainerLow"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="0dp"
+        app:strokeWidth="0dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/basic_info_col_guide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5"/>
+            <LinearLayout
+                android:id="@+id/left_column"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/basic_info_col_guide">
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_device"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="2dp"
+                    app:cardBackgroundColor="@color/materialColorSurfaceBright"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="0dp"
+                    app:strokeWidth="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+                        <TextView
+                            android:id="@+id/device_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/haloui_device_title"
+                            android:textColor="?android:attr/textColorPrimary"
+                            android:textAppearance="?android:attr/textAppearanceListItem" />
+                        <TextView
+                            android:id="@+id/device_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:textColor="@color/materialColorOnSurfaceVariant"
+                            android:textStyle="normal"
+                            android:textSize="15sp"
+                            android:ellipsize="end"
+                            android:maxLines="1"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_processor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginBottom="2dp"
+                    app:cardBackgroundColor="@color/materialColorSurfaceBright"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="0dp"
+                    app:strokeWidth="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+                        <TextView
+                            android:id="@+id/processor_code_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/haloui_processor_code_title"
+                            android:textAppearance="?android:attr/textAppearanceListItem" />
+                        <TextView
+                            android:id="@+id/processor_code_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:textColor="@color/materialColorOnSurfaceVariant"
+                            android:textStyle="normal"
+                            android:textSize="15sp"
+                            android:ellipsize="end"
+                            android:maxLines="1"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_battery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="2dp"
+                    app:cardBackgroundColor="@color/materialColorSurfaceBright"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="0dp"
+                    app:strokeWidth="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+                        <TextView
+                            android:id="@+id/battery_type_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/haloui_battery_type_title"
+                            android:textAppearance="?android:attr/textAppearanceListItem" />
+                        <TextView
+                            android:id="@+id/battery_type_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="@string/haloui_battery_type_message"
+                            android:textColor="@color/materialColorOnSurfaceVariant"
+                            android:textStyle="normal"
+                            android:textSize="15sp"
+                            android:ellipsize="end"
+                            android:maxLines="1"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_halo_version"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="2dp"
+                app:cardBackgroundColor="@color/materialColorSurfaceBright"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="0dp"
+                app:strokeWidth="0dp"
+                app:layout_constraintTop_toTopOf="@id/left_column"
+                app:layout_constraintBottom_toBottomOf="@id/left_column"
+                app:layout_constraintStart_toEndOf="@id/basic_info_col_guide"
+                app:layout_constraintEnd_toEndOf="parent">
+                <org.haloui.plana.utils.WallpaperView
+                    android:id="@+id/halo_version_wallpaper"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:importantForAccessibility="no"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_halo_info_card_version_scrim"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:id="@+id/halo_version_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/haloui_version"
+                        android:textAppearance="?android:attr/textAppearanceListItem" />
+                    <TextView
+                        android:id="@+id/halo_version"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/materialColorOnSurfaceVariant"
+                        android:textSize="15sp"
+                        android:textStyle="normal"
+                        android:ellipsize="end"
+                        android:maxLines="1" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

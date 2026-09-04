@@ -22,4 +22,12 @@
     <string name="wifi_hotspot_unblock_client_dialog_title">Unblock device</string>
     <string name="wifi_hotspot_unblock_client_dialog_text">The device \"<xliff:g id="device_name">%1$s</xliff:g>\" will be able to connect to this hotspot</string>
     <string name="wifi_hotspot_client_manager_footer_text">No clients are currently available. Connected and blocked devices will be listed here when available.</string>
+
+    <!-- Model and Hardware -->
+    <string name="haloui_version">haloUI Version</string>
+    <string name="haloui_device_title">Device</string>
+    <string name="haloui_processor_code_title">Processor</string>
+    <string name="haloui_battery_type_title">Battery</string>
+    <string name="haloui_battery_type_message">%1$d mAh</string>
+    <string name="processor_prettyname" />
 </resources>

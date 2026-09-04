@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2026 haloUI
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="62dp"
+    android:height="11dp"
+    android:viewportWidth="132"
+    android:viewportHeight="24">
+    <group android:translateX="0">
+        <path
+            android:pathData="M12,4 L21,20 L3,20 Z"
+            android:fillColor="#00000000"
+            android:strokeColor="?android:attr/textColorSecondary"
+            android:strokeWidth="1.8"
+            android:strokeLineJoin="round"
+            android:strokeLineCap="round"/>
+    </group>
+    <group android:translateX="36">
+        <path
+            android:pathData="M5,5 L19,19 M19,5 L5,19"
+            android:fillColor="#00000000"
+            android:strokeColor="?android:attr/textColorSecondary"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"/>
+    </group>
+    <group android:translateX="72">
+        <path
+            android:pathData="M12,4 L12,20 M4,12 L20,12"
+            android:fillColor="#00000000"
+            android:strokeColor="?android:attr/textColorSecondary"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"/>
+    </group>
+    <group android:translateX="108">
+        <path
+            android:pathData="M12,4 C7.58,4 4,7.58 4,12 C4,16.42 7.58,20 12,20 C16.42,20 20,16.42 20,12 C20,7.58 16.42,4 12,4 Z"
+            android:fillColor="#00000000"
+            android:strokeColor="?android:attr/textColorSecondary"
+            android:strokeWidth="1.8"/>
+    </group>
+</vector>
