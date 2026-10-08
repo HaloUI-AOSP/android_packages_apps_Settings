@@ -42,6 +42,9 @@ java_library {
     libs: [
         "app-compat-annotations",
     ],
+    optimize: {
+        proguard_flags_files: ["proguard-core.flags"],
+    },
 }
 
 android_library {
@@ -55,16 +58,22 @@ android_library {
     srcs: [
         "src/**/*.java",
         "src/**/*.kt",
+        "haloExtras/src/**/*.java",
+        "haloExtras/src/**/*.kt",
     ],
     exclude_srcs: [
         "src/com/android/settings/biometrics/fingerprint2/lib/**/*.kt",
     ],
+
+    aaptflags: ["--extra-packages com.haloui.settings"],
+
     javac_shard_size: 50,
     use_resource_processor: true,
     resource_dirs: [
         "res",
         "res-export", // for external usage
         "res-product",
+        "haloExtras/res",
     ],
     optional_uses_libs: ["com.android.extensions.appfunctions"],
     static_libs: [

@@ -21,6 +21,20 @@
     android:key="top_level_settings">
 
     <com.android.settingslib.widget.UntitledPreferenceCategory
+        android:order="-140"
+        android:key="top_level_haloui_category">
+
+        <com.android.settings.widget.HomepagePreference
+            android:fragment="com.haloui.settings.HaloUISettings"
+            android:icon="@drawable/ic_homepage_haloui"
+            android:key="top_level_haloui"
+            android:order="-10"
+            android:title="@string/haloui_dashboard_title"
+            android:summary="@string/haloui_dashboard_summary"
+            settings:controller="com.haloui.settings.TopLevelHaloUISettingsPreferenceController"/>
+    </com.android.settingslib.widget.UntitledPreferenceCategory>
+
+    <com.android.settingslib.widget.UntitledPreferenceCategory
         android:order="-130"
         android:key="top_level_connectivity_category">
         <com.android.settings.widget.HomepagePreference

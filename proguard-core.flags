@@ -1,0 +1,2 @@
+# haloUI Settings
+-keep class com.haloui.settings.**

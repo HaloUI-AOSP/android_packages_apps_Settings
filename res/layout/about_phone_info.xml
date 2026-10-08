@@ -185,7 +185,7 @@
                 app:layout_constraintBottom_toBottomOf="@id/left_column"
                 app:layout_constraintStart_toEndOf="@id/basic_info_col_guide"
                 app:layout_constraintEnd_toEndOf="parent">
-                <org.haloui.plana.utils.WallpaperView
+                <com.haloui.settings.utils.WallpaperView
                     android:id="@+id/halo_version_wallpaper"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

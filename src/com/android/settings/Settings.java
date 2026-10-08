@@ -790,6 +790,8 @@ public class Settings extends SettingsActivity {
         }
     }
 
+    public static class HaloUISettingsActivity extends SettingsActivity {}
+
     /** Activity for Network & Internet -> Airplane Mode. */
     public static class AirplaneModeSettingsActivity extends CatalystSettingsActivity {
         public AirplaneModeSettingsActivity() {
